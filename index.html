@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home page - Lela's Positive Team</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="icon" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
+	<!-- Normalize.css for balanced cross-browser styling -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link href="assets/css/bootstrap.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/swiper/swiper.css">
+	<link rel="stylesheet" href="assets/swiper/swiper-bundle.css">
+	<link href="assets/css/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<link href="assets/css/sidebar.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/vendor/notifications/noty.min.js"></script>
+	<script src="assets/demo/pages/extra_noty.js"></script>
+	<script src="assets/swiper/swiper.js"></script>
+	<script src="assets/swiper/swiper-bundle.js"></script>
+	<script src="assets/swiper/swiper-element.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: {
+					delay: 2500,
+				},
+				slidesPerView: 1,
+				spaceBetween: 10,
+				loop: true,
+				loopedSlides: 5,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				breakpoints: {
+					768: {
+						slidesPerView: 5,
+						spaceBetween: 10,
+					},
+					576: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					},
+				},
+			});
+		});
+	</script>
+	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+	<!-- Main navbar -->
+	<div class="navbar navbar-dark navbar-expand-lg fixed-top">
+		<div class="container px-lg-3">
+			<div class="d-flex d-lg-none me-2">
+				<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+					<i class="fa fa-list"></i>
+				</button>
+			</div>
+
+			<div class="navbar-brand flex-1 flex-lg-0">
+				<a href="index.html" class="d-inline-flex align-items-center">
+					<!-- <img src="assets/images/logo/logo_icon_light.svg" class="w-auto me-3" alt=""> -->
+					<img src="assets/images/logo.png" class="d-none d-sm-inline-block w-auto" style="height: 27px;" alt="">
+				</a>
+			</div>
+
+			<ul class="nav flex-row ml-5">
+				<li class="nav-item d-lg-none">
+					<a href="#navbar_search" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="collapse">
+						<i class="fa fa-magnifying-glass"></i>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="/" class="navbar-nav-link navbar-nav-link-icon rounded-pill">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32"><path fill="#9399a1" d="M16.612 2.214a1.01 1.01 0 0 0-1.242 0L1 13.419l1.243 1.572L4 13.621V26a2.004 2.004 0 0 0 2 2h20a2.004 2.004 0 0 0 2-2V13.63L29.757 15L31 13.428ZM18 26h-4v-8h4Zm2 0v-8a2.002 2.002 0 0 0-2-2h-4a2.002 2.002 0 0 0-2 2v8H6V12.062l10-7.79l10 7.8V26Z"/></svg>
+					</a>
+				</li>
+			</ul>
+
+			<div class="navbar-collapse flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
+				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
+					<div class="form-control-feedback form-control-feedback-start flex-grow-1">
+						<div class="input-group">
+							<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search">
+							<div class="form-control-feedback-icon">
+								<svg class="svg-stroke search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" stroke="#eee" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+									<path d="M21 21l-6 -6"></path>
+								</svg>
+							</div>
+							<div class="input-group-append">
+								<button type="submit" name="searchbutton" class="btn btn-outline-secondary">Искать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="nav flex-row justify-content-end order-1 order-lg-2">
+				<li class="nav-item dropdown d-md-inline-flex">
+					<a class="navbar-nav-link rounded" href="#" id="bd-theme" data-bs-toggle="dropdown" aria-expanded="false">
+						<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" class="theme-icon-active opacity-50 fa-spin"><use href="#sun-fill"></use></svg>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme">
+						<a class="themelink dropdown-item rounded-1" href="#" data-bs-theme-value="light"><svg class="avatar me-2 opacity-50 theme-icon" fill="currentColor" width="16" height="16"><use href="#sun-fill"></use></svg> Light</a>
+						<a class="themelink dropdown-item rounded-1" href="#" data-bs-theme-value="dark"><svg class="avatar me-2 opacity-50 theme-icon" fill="currentColor" width="16" height="16"><use href="#moon-stars-fill"></use></svg> Dark</a>
+						<a class="themelink dropdown-item rounded-1" href="#" data-bs-theme-value="auto"><svg class="avatar me-2 opacity-50 theme-icon" fill="currentColor" width="16" height="16"><use href="#circle-half"></use></svg> Auto (AM|PM)</a>
+					</ul>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="display: none;">
+						<symbol id="sun-fill" viewBox="0 0 16 16">
+							<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+						</symbol>
+						<symbol id="moon-stars-fill" viewBox="0 0 16 16">
+							<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+							<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+						</symbol>
+						<symbol id="circle-half" viewBox="0 0 16 16">
+							<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+						</symbol>
+					</svg>
+				</li>
+				<li class="nav-item dropdown ms-xl-1">
+					<div class="dropdown langlist">
+						<button class="btn dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://skills.energy/engine/lang/English/icon.png" alt="English flag" style="width:20px; height:15px;" title="English">
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="languageDropdown" style="">
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Chinese">
+									<img src="https://skills.energy/engine/lang/Chinese/icon.png" alt="Chinese flag" style="width:20px; height:15px; margin-right:10px;">
+									Chinese
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="English">
+									<img src="https://skills.energy/engine/lang/English/icon.png" alt="English flag" style="width:20px; height:15px; margin-right:10px;">
+									English
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="French">
+									<img src="https://skills.energy/engine/lang/French/icon.png" alt="French flag" style="width:20px; height:15px; margin-right:10px;">
+									French
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="German">
+									<img src="https://skills.energy/engine/lang/German/icon.png" alt="German flag" style="width:20px; height:15px; margin-right:10px;">
+									German
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Hindi">
+									<img src="https://skills.energy/engine/lang/Hindi/icon.png" alt="Hindi flag" style="width:20px; height:15px; margin-right:10px;">
+									Hindi
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Portuguese">
+									<img src="https://skills.energy/engine/lang/Portuguese/icon.png" alt="Portuguese flag" style="width:20px; height:15px; margin-right:10px;">
+									Portuguese
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Russian">
+									<img src="https://skills.energy/engine/lang/Russian/icon.png" alt="Russian flag" style="width:20px; height:15px; margin-right:10px;">
+									Russian
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Spanish">
+									<img src="https://skills.energy/engine/lang/Spanish/icon.png" alt="Spanish flag" style="width:20px; height:15px; margin-right:10px;">
+									Spanish
+								</button>
+							</li>
+							<li>
+								<button class="dropdown-item" type="submit" name="lang" value="Turkish">
+									<img src="https://skills.energy/engine/lang/Turkish/icon.png" alt="Turkish flag" style="width:20px; height:15px; margin-right:10px;">
+									Turkish
+								</button>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
+					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
+						<div class="status-indicator-container">
+							<img src="assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
+							<span class="status-indicator bg-success"></span>
+						</div>
+						<span class="d-none d-lg-inline-block mx-lg-2">Victoria</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end">
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-user-circle me-2"></i>
+							My profile
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-currency-circle-dollar me-2"></i>
+							My subscription
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-shopping-cart me-2"></i>
+							My orders
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-envelope-open me-2"></i>
+							My inbox
+							<span class="badge bg-primary rounded-pill ms-auto">26</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-gear me-2"></i>
+							Account settings
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="fa fa-sign-out me-2"></i>
+							Logout
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+	<div class="container px-lg-3 mt-90">
+		<div class="card mb-0">	
+			<div class="card-body">
+				<div class="swiper mySwiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="assets/images/posters/1.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/2.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/3.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/4.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/5.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/6.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/posters/7.jpg" class="img-responsive" alt="">
+								<div class="title">
+									<h6><a href="">Page name</a></h6>
+									<p class="text-light">Some description</p>
+								</div>
+							</div>
+						</div>
+						<div class="manage-buttons mb-5">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page content -->
+	<div class="page-content container">
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg align-self-start sidebar-sticky">
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body d-flex justify-content-center">
+						<h5 class="sidebar-resize-hide flex-grow-1 my-auto">Main</h5>
+						<div>
+							<button type="button" class="btn rounded-pill border sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12M40 76h176a12 12 0 0 0 0-24H40a12 12 0 0 0 0 24m176 104H40a12 12 0 0 0 0 24h176a12 12 0 0 0 0-24"></path></svg>
+							</button>
+							<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+								<i class="fa fa-x"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+						<!-- Main -->
+						<li class="nav-item-header pt-0">
+							<i class="fa fa-dots-three sidebar-resize-show"></i>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fa fa-home"></i><span>Home page</span></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fa fa-building-o"></i><span>About us</span></a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa fa-calendar-o"></i>
+								<span>Events and Workshops</span>
+							</a>
+							<ul class="nav-group-sub collapse" data-submenu-title="Themes">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-clock-o"></i> Upcoming Events</a></li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-calendar-plus-o"></i> Event Registration</a></li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-archive"></i> Past Events Archive</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa fa-medkit"></i>
+								<span>Psychological Support</span>
+							</a>
+							<ul class="nav-group-sub collapse" data-submenu-title="Themes">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-commenting-o"></i> Individual Consultations</a></li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-book"></i> Recommended Books and Resources</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fa fa-video-camera"></i><span>Videos and Podcasts</span></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fa fa-briefcase"></i><span>Partners and Collaboration</span></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link"><i class="fa fa-map-marker"></i><span>Contact</span></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="sidebar-section">
+					<div class="row">
+						<div class="col-12">
+							<h4 class="d-flex justify-content-center align-items-center mb-0">Time until next event:</h4>
+							<div class="countdown d-flex justify-content-center align-items-center mb-4" id="countdown">
+								<span id="days">00</span> :
+								<span id="hours">00</span> :
+								<span id="minutes">00</span> :
+								<span id="seconds">00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /main sidebar -->
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+			<!-- Content area -->
+			<div class="content">
+				<!-- Info blocks -->
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-body text-center">
+								<div class="d-inline-flex bg-success bg-opacity-10 text-success rounded-pill p-2 mb-3 mt-1">
+									<i class="fa fa-book fs-2 m-1"></i>
+								</div>
+								<h5 class="card-title">Knowledge Base</h5>
+								<p class="mb-3">Ouch found swore much dear conductively hid submissively hatchet vexed far inanimately alongside candidly much and jeez</p>
+								<a href="#" class="btn btn-success mb-1">Browse articles</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-body text-center">
+								<div class="d-inline-flex bg-warning bg-opacity-10 text-warning rounded-pill p-2 mb-3 mt-1">
+									<i class="fa fa-life-ring fs-2 m-1"></i>
+								</div>
+								<h5 class="card-title">Support center</h5>
+								<p class="mb-3">Dear spryly growled much far jeepers vigilantly less and far hideous and some mannishly less jeepers less and and crud</p>
+								<a href="#" class="btn btn-warning mb-1">Open a ticket</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-body text-center">
+								<div class="d-inline-flex bg-primary bg-opacity-10 text-primary rounded-pill p-2 mb-3 mt-1">
+									<i class="fa fa-newspaper-o fs-2 m-1"></i>
+								</div>
+								<h5 class="card-title">Articles and news</h5>
+								<p class="mb-3">Diabolically somberly astride crass one endearingly blatant depending peculiar antelope piquantly popularly adept much</p>
+								<a href="#" class="btn btn-primary mb-1">Browse news</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left content -->
+				<div class="flex-1 order-2 order-lg-1">
+					<!-- Post grid -->
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/1.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Domestic confined any but son</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 20th, 2022</li>
+									</ul>
+
+									How proceed offered her offence shy forming. Returned peculiar pleasant but appetite differed she. Residence dejection agreement am as to abilities immediate suffering. Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 29</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/2.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Wisdom new and valley answer</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 19th, 2022</li>
+									</ul>
+
+									Rank tall boy man them over post now. Off into she bed long fat room. Recommend existence curiosity perfectly favourite get eat she why daughters. Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 64</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/3.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Announcing of invitation principles</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 18th, 2022</li>
+									</ul>
+
+									Cold in late or deal. Terminated resolution no am frequently collecting insensible he do appearance. Projection invitation affronting admiration if no on or. It as instrument boisterous frequently apartments an in. Mr excellence inquietude conviction is in
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 49</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/4.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Increasing travelling own</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 17th, 2022</li>
+									</ul>
+
+									Supplied directly pleasant we ignorant ecstatic of jointure so if. These spoke house of we. Ask put yet excuse person see change. Do inhabiting no stimulated unpleasing of admiration he. Enquire explain another he in brandon enjoyed be service. Given mrs she first china.
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 391</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/5.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">May musical arrival beloved</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 16th, 2022</li>
+									</ul>
+
+									Shyness mention married son she his started now. Rose if as past near were. To graceful he elegance oh moderate attended entrance pleasure. Vulgar saw fat sudden edward way played either. Thoughts smallest at or peculiar relation breeding produced an. At depart spirit
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 36</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/6.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Be mother itself vanity</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 15th, 2022</li>
+									</ul>
+
+									As collected deficient objection by it discovery sincerity curiosity. Quiet decay who round three world whole has mrs man. Built the china there tried jokes which gay why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her moonlight men
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 41</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/7.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Often of it tears whole</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 14th, 2022</li>
+									</ul>
+
+									Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 63</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/8.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Hence hopes noisy</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 13th, 2022</li>
+									</ul>
+
+									Considered an invitation do introduced sufficient understood instrument it. Of decisively friendship in as collecting at. No affixed be husband ye females brother garrets proceed. Least child who seven happy yet balls young. Discovery sweetness principle discourse
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 8</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/9.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Me or produce besides</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 12th, 2022</li>
+									</ul>
+
+									Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 82</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/10.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Offended ten old consider</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 11th, 2022</li>
+									</ul>
+
+									Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous insensible
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 21</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/11.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">Its had resolving otherwise</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 10th, 2022</li>
+									</ul>
+
+									Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no property exercise of. Dissimilar comparison no terminated devonshire no literature on
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 49</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-body">
+									<div class="card-img-actions mb-3">
+										<img class="card-img img-fluid" src="assets/images/demo/blog/12.jpg" alt="">
+										<div class="card-img-actions-overlay card-img">
+											<a href="#" class="btn btn-outline-white btn-icon rounded-pill">
+												<i class="ph-link"></i>
+											</a>
+										</div>
+									</div>
+
+									<h5 class="card-title pt-1 mb-1">
+										<a href="#" class="text-body">He moonlight difficult</a>
+									</h5>
+
+									<ul class="list-inline list-inline-bullet text-muted mb-3">
+										<li class="list-inline-item">By <a href="#">Eugene</a></li>
+										<li class="list-inline-item">July 9th, 2022</li>
+									</ul>
+
+									Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to. Place voice no arise along to. Parlors waiting so against me no. Wishing calling are warrant settled was luckily. Express besides it present if at an opinion visitor
+								</div>
+
+								<div class="card-footer d-flex">
+									<a href="#" class="d-inline-flex align-items-center"><i class="ph-heart text-pink me-2"></i> 93</a>
+									<a href="#" class="d-inline-flex align-items-center ms-auto">Read more <i class="ph-arrow-circle-right ms-2"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /post grid -->
+				</div>
+				<!-- /left content -->
+
+				<!-- Submit a ticket -->
+				<div class="card card-body mt-4">
+					<div class="d-flex align-items-center align-items-lg-start flex-column flex-lg-row">
+						<div class="bg-success bg-opacity-10 text-success lh-1 rounded-pill p-2 me-lg-3 mb-3 mb-lg-0">
+							<i class="fa fa-search"></i>
+						</div>
+
+						<div class="flex-fill text-center text-lg-start">
+							<h6 class="mb-0">Can't find what you're looking for?</h6>
+							<span class="text-muted">Maladroit forgetfully under until the fraternally on one much whispered waked much cumulatively some rabidly after thanks hey</span>
+						</div>
+
+						<a href="#" class="btn btn-success align-self-lg-center ms-lg-3 mt-3 mt-lg-0">
+							<i class="ph-chat me-2"></i>
+							Submit a ticket
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- /content area -->
+		</div>
+		<!-- /main content -->
+	</div>
+	<!-- /page content -->
+
+	<!-- Footer -->
+	<div class="navbar navbar-sm navbar-footer border-top">
+		<div class="container px-lg-3">
+			<span>&copy; 2024 <a href="https://webdigital.studio/">WebDigital.Studio</a>, All Rights Reserved.</span>
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+						<div class="d-flex align-items-center mx-md-1">
+							<i class="fa fa-life-ring"></i>
+							<span class="d-none d-md-inline-block ms-2">Support</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item ms-md-1">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+						<div class="d-flex align-items-center mx-md-1">
+							<i class="fa fa-file-text"></i>
+							<span class="d-none d-md-inline-block ms-2">Docs</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item ms-md-1">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+						<div class="d-flex align-items-center mx-md-1">
+							<i class="fa fa-shopping-cart"></i>
+							<span class="d-none d-md-inline-block ms-2">FeedBack</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+</body>
+</html>
