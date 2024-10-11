@@ -1803,11 +1803,3 @@ body {
     border-radius: 0px 4px 4px 0px;
     --bs-btn-padding-y: 0.415rem;
 }
-.countdown {
-    display: flex;
-    font-size: 2rem;
-}
-.countdown span {
-    border: 1px solid #eee;
-    padding: 0px 10px;
-}
