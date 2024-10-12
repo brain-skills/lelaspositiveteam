@@ -636,7 +636,7 @@ tr {
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: var(--card-spacer-y) var(--card-spacer-x);
+    padding: 1.0rem 1.25rem 1.2rem 1.25rem;
     color: var(--card-color);
 }
 .card-header {
@@ -1813,4 +1813,10 @@ body {
     font-size: 18px;
     fill: #fff;
     letter-spacing: 2px;
+}
+.accordion{
+    --accordion-active-bg: transparent;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--accordion-active-bg);
 }
