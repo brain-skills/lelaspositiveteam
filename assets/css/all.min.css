@@ -1803,3 +1803,14 @@ body {
     border-radius: 0px 4px 4px 0px;
     --bs-btn-padding-y: 0.415rem;
 }
+@font-face {
+    font-family: "ManropeBold";
+    src: url("../../assets/fonts/Manrope/Bold.ttf") format("truetype");
+}
+.manropebold {
+    font-family: "ManropeBold", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    fill: #fff;
+    letter-spacing: 2px;
+}

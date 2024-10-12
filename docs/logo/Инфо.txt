@@ -1,0 +1,17 @@
+Для добавления SVG текста нужно использовать:
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100">
+  <text x="10" y="70" class="manropebold">SKILLS.ENERGY</text>
+</svg>
+
+И в CSS указать стили:
+@font-face {
+  font-family: "ManropeBold";
+  src: url("../../fonts/Manrope/Bold.ttf") format("truetype");
+}
+.manropebold {
+  font-family: "ManropeBold", sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  fill: #00b04b;
+  letter-spacing: 8px;
+}

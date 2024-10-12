@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100">
+  <style type="text/css">
+    @font-face {
+      font-family: "ManropeBold";
+      src: url("../../fonts/Manrope/Bold.ttf") format("truetype");
+    }
+    .manropebold {
+      font-family: "ManropeBold", sans-serif;
+      font-weight: bold;
+      font-size: 70px;
+      fill: #00b04b;
+      letter-spacing: 2px;
+    }
+  </style>
+  <text x="10" y="70" class="manropebold">LELA'S POSITIVE TEAM</text>
+</svg>
